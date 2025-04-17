@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #0f0f0f;
+      background-color: #121212;
       color: #ffffff;
       margin: 0;
       padding: 0;
@@ -17,60 +17,90 @@
       background-color: #1a1a1a;
       padding: 40px 20px;
       text-align: center;
+      opacity: 1;
+      transition: opacity 0.5s ease-out;
     }
 
     header h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 10px;
       color: #ffd700;
     }
 
     header p {
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #cccccc;
+      font-style: italic;
     }
 
     section {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.5s ease-out;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      font-size: 1.1em;
+      color: #d4d4d4;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
     }
 
     .cta {
       background-color: #ffd700;
       color: #000;
-      padding: 15px 30px;
+      padding: 20px 40px;
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
       margin: 20px 0;
       border-radius: 10px;
-      font-size: 1.2em;
+      font-size: 1.4em;
+      transition: all 0.3s ease-in-out;
+      opacity: 0.9;
+      position: relative;
+      z-index: 10;
     }
 
-    .email-box {
+    .cta:hover {
+      background-color: #d4af37;
+    }
+
+    .cta.enlarged {
+      font-size: 1.6em;
+      transform: scale(1.1);
+    }
+
+    .testemunhos {
       margin-top: 40px;
-      text-align: center;
+      font-size: 1.1em;
+      color: #ccc;
     }
 
-    .email-box input[type="email"] {
-      padding: 12px;
-      width: 80%;
-      max-width: 400px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1em;
-      margin-bottom: 10px;
+    .testemunho {
+      border-left: 5px solid #ffd700;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      font-style: italic;
     }
 
-    .email-box button {
-      background-color: #d62020;
-      color: #fff;
-      border: none;
-      padding: 12px 25px;
-      font-size: 1em;
-      border-radius: 6px;
-      cursor: pointer;
+    .testemunho span {
+      color: #ffd700;
+      font-weight: bold;
     }
 
     footer {
@@ -80,44 +110,187 @@
       padding: 20px;
       font-size: 0.9em;
     }
+
+    #progressBarContainer {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-color: #444;
+    }
+
+    #progressBar {
+      height: 100%;
+      width: 0;
+      background-color: #ffd700;
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      color: #ffd700;
+      margin-top: 40px;
+    }
+
+    .faq {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .reject-accept-graphic {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+    }
+
+    .reject-accept-graphic .option {
+      text-align: center;
+      width: 48%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .reject-accept-graphic .reject {
+      background-color: #d9534f;
+      color: white;
+    }
+
+    .reject-accept-graphic .accept {
+      background-color: #5bc0de;
+      color: white;
+    }
+
+    .timer {
+      font-size: 1.2em;
+      color: #ffd700;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .button {
+      font-size: 1.2em;
+      padding: 15px;
+      width: 48%;
+      border-radius: 10px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .blue-btn {
+      background-color: #0066cc;
+    }
+
+    .blue-btn:hover {
+      background-color: #004d99;
+    }
+
+    .red-btn {
+      background-color: #d9534f;
+    }
+
+    .red-btn:hover {
+      background-color: #c9302c;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>QUEBRE O CICLO</h1>
-    <p>Você realmente está pronto para mudar de vida ou vai deixar o medo decidir por você?</p>
+    <p><i>Você está pronto para mudar de vida, ou vai continuar vivendo uma mentira?</i></p>
   </header>
 
   <section>
-    <h2>Este não é apenas um livro, é um gatilho.</h2>
-    <p>Quantas vezes você já se prometeu mudar, mas continuou no mesmo lugar? Este conteúdo foi feito para provocar, desafiar e fazer você se mover. Nada aqui é motivacional barato — é transformação real.</p>
+    <h2>Este não é apenas um livro. É o seu  choque de realidade .</h2>
+    <p>Quantas promessas de mudança você fez, mas ainda está preso no mesmo ciclo? Este conteúdo é para  desafiar você , não para te dar falsas esperanças.  Nada de motivação barata , é transformação real.</p>
 
     <h2>📘 O que você vai acessar:</h2>
     <ul>
-      <li>Como identificar e destruir os ciclos invisíveis que controlam sua vida</li>
-      <li>As 3 chaves de reprogramação mental que geram liberdade</li>
-      <li>Estratégias práticas que funcionam no mundo real — sem mágica</li>
+      <li>Como identificar e destruir os  ciclos invisíveis  que controlam sua vida.</li>
+      <li>As 3 chaves de  reprogramação mental  que geram liberdade verdadeira.</li>
+      <li>Estratégias práticas que funcionam  no mundo real , sem truques ou mágica.</li>
     </ul>
 
-    <h2>🎁 PRESENTE EXCLUSIVO: SATORI — O Despertar Silencioso</h2>
-    <p>Após a sua compra, você desbloqueará um presente transformador: o <strong>SATORI</strong>, uma leitura rápida, profunda e direta, que prepara sua mente para entrar em estado de clareza interior. Ele é o primeiro estalo. O clique mental que inicia tudo.</p>
+    <h2>🎁 PRESENTE EXCLUSIVO:  SATORI  — O Despertar Silencioso</h2>
+    <p>Após a sua compra, você desbloqueará o  SATORI , um presente que vai preparar sua mente para entrar em um estado de clareza. Esse é o clique mental que dá o  primeiro passo para a transformação .</p>
 
-    <h2>Agora é com você.</h2>
-    <p>Você pode sair agora e continuar vivendo como antes. Ou aceitar o desafio que está sendo colocado aqui, agora. Não há garantias no mundo — só existe ação ou inércia. Qual você escolhe?</p>
+    <h2 class="section-title">O Que Não Está Incluso</h2>
+    <p>Este livro não é para todos.  Se você está esperando soluções fáceis ou promessas mágicas, então este não é o livro para você. </p>
 
-    <a href="#formulario" class="cta">Está pronto para quebrar o ciclo?</a>
+    <h2 class="section-title">Desafio de 7 Dias</h2>
+    <p>Se você está pronto para quebrar o ciclo, aceite nosso desafio de 7 dias. Cada dia é um passo para um futuro diferente. Está preparado para transformar sua vida? O primeiro passo é começar!</p>
 
-    <div class="email-box" id="formulario">
-      <p><strong>Insira seu melhor e-mail</strong> para começar a mudança:</p>
-      <input type="email" placeholder="seu@email.com">
-      <br>
-      <button>Quero esse desafio</button>
+    <h2 class="section-title">Dúvidas Comuns</h2>
+    <div class="faq">
+      <div class="faq-item">1.  "Isso realmente vai funcionar?" </div>
+      <p>Não prometemos milagres, mas garantimos que o que você vai encontrar aqui é aplicável no mundo real e vai exigir sua dedicação.</p>
+
+      <div class="faq-item">2.  "E se eu não conseguir aplicar os métodos?" </div>
+      <p>Esse é o motivo pelo qual você está aqui. Não é fácil, mas ninguém que realmente mudou de vida teve um caminho sem obstáculos. O Kael vai te guiar pelos passos que você precisa dar, mesmo quando for desconfortável.</p>
+
+      <div class="faq-item">3.  "Este livro é só mais uma motivação barata?" </div>
+      <p>Não.  Kael não te poupa.  O livro é sobre desafios reais, estratégias reais e a única coisa que realmente funciona. Isso é transformação, não motivação.</p>
+    </div>
+
+    <h2 class="section-title">Agora é com você</h2>
+    <p>Você pode sair agora e continuar vivendo a mesma vida de sempre. Ou pode dar o  primeiro passo para a mudança real .  Kael não vai te poupar.  A escolha é sua.</p>
+
+    <div class="reject-accept-graphic">
+      <div class="option reject">
+        <h3>Ficar na Zona de Conforto</h3>
+        <p>"Eu vou continuar procrastinando e vivendo a vida como está." </p>
+      </div>
+      <div class="option accept">
+        <h3>Aceitar a Mudança</h3>
+        <p>"Estou pronto para dar o primeiro passo para a transformação verdadeira." </p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      	<a href="https://www.instagram.com" class="button red-btn">Ficar onde estou</a>
+
+	<a href="https://app.monetizze.com.br/checkout/DUR340863" class="button blue-btn">Sim, quero mudar agora!</a>
+      
+    </div>
+
+    <div class="testemunhos">
+      <div class="testemunho">
+        <span>Maria, 34 anos:</span> "Eu duvidei até o último momento, mas a transformação foi real. Hoje, estou vivendo a vida que sempre sonhei."
+      </div>
+
+      <div class="testemunho">
+        <span>Lucas, 28 anos:</span> "Não achei que seria possível mudar, mas Kael foi direto ao ponto e mostrou o caminho. Fui desafiado e cresci de formas que nunca imaginei."
+      </div>
+
+      <div class="testemunho">
+        <span>Fernanda, 41 anos:</span> "Eu pensava que esses livros de autoajuda eram todos iguais, mas esse me trouxe uma mudança verdadeira. Hoje vejo tudo de uma forma nova."
+      </div>
+
+      <div class="testemunho">
+        <span>Ricardo, 39 anos:</span> "Tentei mudar de vida várias vezes, mas nunca funcionou. Esse livro foi diferente, me fez entender o que estava me bloqueando."
+      </div>
     </div>
   </section>
 
   <footer>
-    © 2025 INTELLECTA. Todos os direitos reservados.
+    <p>&copy; 2025 Quebre o Ciclo. Todos os direitos reservados.</p>
   </footer>
 
 </body>
