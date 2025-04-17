@@ -1,164 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O Despertar Satori</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0;
-        }
-        header img {
-            width: 250px;
-        }
-        h1 {
-            color: #1e1e1e;
-            font-size: 36px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-        }
-        .section img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-        .email-form {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .email-form input[type="email"] {
-            padding: 12px;
-            font-size: 16px;
-            width: 300px;
-            margin-bottom: 10px;
-        }
-        .email-form button {
-            padding: 12px 24px;
-            font-size: 16px;
-            background-color: #1e88e5;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .email-form button:hover {
-            background-color: #1669bb;
-        }
-        .pdf-download {
-            text-align: center;
-            margin-top: 60px;
-        }
-        .pdf-download a {
-            background-color: #e74c3c;
-            color: white;
-            padding: 14px 28px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 8px;
-        }
-        .pdf-download a:hover {
-            background-color: #c0392b;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quebre o Ciclo - Página Oficial</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
 
-        /* ChatGPT floating button */
-        .chatgpt-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #10a37f;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
+    header {
+      background-color: #1a1a1a;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        .chatgpt-float img {
-            width: 32px;
-            height: 32px;
-        }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
 
-        .chatgpt-tooltip {
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            background-color: #222;
-            color: #fff;
-            padding: 10px 14px;
-            border-radius: 8px;
-            font-size: 14px;
-            opacity: 0.95;
-            z-index: 9998;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    header p {
+      font-size: 1.1em;
+      color: #cccccc;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cta {
+      background-color: #ffd700;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 20px 0;
+      border-radius: 10px;
+      font-size: 1.2em;
+    }
+
+    .email-box {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .email-box input[type="email"] {
+      padding: 12px;
+      width: 80%;
+      max-width: 400px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .email-box button {
+      background-color: #d62020;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <img src="images/logo_satori.png" alt="Logo Satori" />
-    <h1>O Despertar Satori</h1>
-    <p>Uma jornada desafiadora para quem se recusa a viver no automático.</p>
-</header>
+  <header>
+    <h1>QUEBRE O CICLO</h1>
+    <p>Você realmente está pronto para mudar de vida ou vai deixar o medo decidir por você?</p>
+  </header>
 
-<section class="section">
-    <h2>Você sente que está preso em ciclos que se repetem?</h2>
-    <p>Este não é apenas mais um ebook. É um chamado à mudança. Um desafio direto ao seu maior inimigo: você mesmo.</p>
-    <img src="images/ciclo_repeticao.jpg" alt="Ciclo de repetição" />
-</section>
+  <section>
+    <h2>Este não é apenas um livro, é um gatilho.</h2>
+    <p>Quantas vezes você já se prometeu mudar, mas continuou no mesmo lugar? Este conteúdo foi feito para provocar, desafiar e fazer você se mover. Nada aqui é motivacional barato — é transformação real.</p>
 
-<section class="section">
-    <h2>O Que é o Satori?</h2>
-    <p>Satori é o despertar, o momento de clareza que transforma sua vida por completo. É o romper definitivo com tudo o que te limita.</p>
-    <img src="images/satori_despertar.jpg" alt="Despertar do Satori" />
-</section>
+    <h2>📘 O que você vai acessar:</h2>
+    <ul>
+      <li>Como identificar e destruir os ciclos invisíveis que controlam sua vida</li>
+      <li>As 3 chaves de reprogramação mental que geram liberdade</li>
+      <li>Estratégias práticas que funcionam no mundo real — sem mágica</li>
+    </ul>
 
-<section class="section">
-    <h2>Por Que Isso é um Presente?</h2>
-    <p>Porque acreditamos que, se você tiver coragem de aceitar esse desafio, não será mais a mesma pessoa após essa leitura. E não queremos nada em troca. Apenas que você prove a si mesmo que é capaz.</p>
-    <img src="images/presente_transformador.jpg" alt="Presente transformador" />
-</section>
+    <h2>🎁 PRESENTE EXCLUSIVO: SATORI — O Despertar Silencioso</h2>
+    <p>Após a sua compra, você desbloqueará um presente transformador: o <strong>SATORI</strong>, uma leitura rápida, profunda e direta, que prepara sua mente para entrar em estado de clareza interior. Ele é o primeiro estalo. O clique mental que inicia tudo.</p>
 
-<div class="pdf-download">
-    <p><strong>Pronto para iniciar?</strong></p>
-    <a href="files/Quebre-o-Ciclo.pdf" target="_blank">Acessar o eBook Completo</a>
-</div>
+    <h2>Agora é com você.</h2>
+    <p>Você pode sair agora e continuar vivendo como antes. Ou aceitar o desafio que está sendo colocado aqui, agora. Não há garantias no mundo — só existe ação ou inércia. Qual você escolhe?</p>
 
-<div class="email-form">
-    <p><strong>Insira seu melhor e-mail:</strong></p>
-    <input type="email" placeholder="seuemail@exemplo.com" />
-    <br />
-    <button>Sim, estou pronto para mudar</button>
-</div>
+    <a href="#formulario" class="cta">Está pronto para quebrar o ciclo?</a>
 
-<!-- Tooltip -->
-<div class="chatgpt-tooltip">Fale com Kael (ChatGPT)</div>
+    <div class="email-box" id="formulario">
+      <p><strong>Insira seu melhor e-mail</strong> para começar a mudança:</p>
+      <input type="email" placeholder="seu@email.com">
+      <br>
+      <button>Quero esse desafio</button>
+    </div>
+  </section>
 
-<!-- Botão flutuante -->
-<a href="https://" target="_blank" class="chatgpt-float">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
-</a>
+  <footer>
+    © 2025 INTELLECTA. Todos os direitos reservados.
+  </footer>
 
 </body>
 </html>
